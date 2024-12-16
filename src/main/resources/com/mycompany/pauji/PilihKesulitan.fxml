@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1350.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.PilihKesulitanController">
+    <stylesheets>
+        <URL value="@/styles/pilihkesulitan.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="easy" layoutX="145.0" layoutY="125.0" mnemonicParsing="false" onAction="#PlayEasy" prefHeight="60.0" prefWidth="150.0" text="Easy" AnchorPane.leftAnchor="262.5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="medium" layoutX="525.0" layoutY="125.0" mnemonicParsing="false" onAction="#PlayMedium" prefHeight="60.0" prefWidth="150.0" text="Medium" AnchorPane.leftAnchor="600.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="Hard" layoutX="885.0" layoutY="125.0" mnemonicParsing="false" onAction="#PlayHard" prefHeight="60.0" prefWidth="150.0" text="Hard" AnchorPane.leftAnchor="937.5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="188.0" layoutY="203.0">
+         <children>
+            <TableView fx:id="easyTableView" prefHeight="400.0" prefWidth="300.0">
+              <columns>
+                <TableColumn fx:id="easyColomNum" prefWidth="25.0" text="No" />
+                <TableColumn fx:id="easyColomName" prefWidth="195.0" text="Username" />
+                <TableColumn fx:id="easyColomScore" prefWidth="80.0" text="Score" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="525.0" layoutY="203.0">
+         <children>
+            <TableView fx:id="mediumTableView" prefHeight="400.0" prefWidth="300.0">
+               <columns>
+                  <TableColumn fx:id="mediumColomNum" prefWidth="25.0" text="No" />
+                  <TableColumn fx:id="mediumColomName" prefWidth="195.0" text="Username" />
+                  <TableColumn fx:id="mediumColomScore" prefWidth="80.0" text="Score" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="863.0" layoutY="203.0">
+         <children>
+            <TableView fx:id="hardTableView" prefHeight="400.0" prefWidth="300.0">
+               <columns>
+                  <TableColumn fx:id="hardColomNum" prefWidth="25.0" text="No" />
+                  <TableColumn fx:id="hardColomName" prefWidth="195.0" text="Username" />
+                  <TableColumn fx:id="hardColomScore" prefWidth="80.0" text="Score" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnBack" layoutX="38.0" layoutY="35.0" mnemonicParsing="false" onAction="#GoToMainMenu" prefHeight="60.0" prefWidth="150.0" text="Back">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="725.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
