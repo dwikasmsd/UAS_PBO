@@ -30,18 +30,18 @@
                         <Font name="System Bold" size="26.0" />
                      </font>
                   </Text>
-                  <TextField prefHeight="55.0" prefWidth="320.0" />
+                  <TextField fx:id="inputUsername" prefHeight="55.0" prefWidth="320.0" />
                   <Text fill="WHITE" stroke="#0a0a0a" strokeType="OUTSIDE" strokeWidth="4.0" text="Password :" wrappingWidth="147.611328">
                      <font>
                         <Font name="System Bold" size="23.0" />
                      </font>
                   </Text>
-                  <PasswordField prefHeight="56.0" prefWidth="320.0" />
+                  <PasswordField fx:id="inputPassword" prefHeight="56.0" prefWidth="320.0" />
                </children>
             </VBox>
          </children>
       </AnchorPane>
-      <Button layoutX="970.0" layoutY="426.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" text="Sign In" />
-      <Button layoutX="992.0" layoutY="539.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Back" />
+      <Button fx:id="signIn" layoutX="970.0" layoutY="426.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" text="Sign In" onAction="#GoToDifficulty" />
+      <Button fx:id="btnBack" layoutX="992.0" layoutY="539.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Back" onAction="#GoToMinMenu" />
    </children>
 </AnchorPane>
